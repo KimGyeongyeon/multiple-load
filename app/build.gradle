@@ -1,6 +1,7 @@
 plugins {
     id 'com.android.application'
     id 'org.jetbrains.kotlin.android'
+    id 'kotlin-kapt'
 }
 
 android {
@@ -49,4 +50,11 @@ dependencies {
     // viewModel dependency
     implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.5.1'
     implementation 'androidx.fragment:fragment-ktx:1.5.3'
+
+    //OkHttps
+//    implementation 'com.squareup.okhttp3:okhttps:3.4.1'
+    implementation platform('com.squareup.okhttp3:okhttp-bom:4.10.0')
+    implementation 'com.squareup.okhttp3:okhttp'
+//    implementation 'com.squareup.okhttp3:logging-interceptor'
+
 }

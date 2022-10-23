@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">NetworkPractice</string>
     <string name="copy_text">copy text</string>
+    <string name="cat_picture">cat picture</string>
 </resources>
