@@ -5,7 +5,8 @@ import com.example.networkpractice.data.MainDataSource
 import okhttp3.Request
 
 class RemoteDataSource : MainDataSource {
-
+    
+    // Retrofit을 안써보려고 시도
     override fun loadText(callback: MainDataSource.MainTextCallback) {
         val request = Request.Builder()
             .url(TEXT_URL).build()
@@ -17,7 +18,8 @@ class RemoteDataSource : MainDataSource {
             }
         }
     }
-
+    
+    // Glide를 안써보려고 시도
     override fun loadImage(callback: MainDataSource.MainImageCallback) {
         // 방식1. 사진 하나에 4분 20초 걸림
         val `in` = java.net.URL(IMAGE_URL).openStream()
